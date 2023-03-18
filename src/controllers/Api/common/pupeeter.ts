@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import puppeteer from "puppeteer";
+
 const { Client, LocalAuth } = require("whatsapp-web.js");
 
 export const getScreenShot = async (
