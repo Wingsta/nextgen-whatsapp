@@ -1,0 +1,22 @@
+ul.footer-list {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+ul.footer-list li {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 1em !important;
+    border-right: 1px solid #999 !important;
+    line-height: 0.8em !important;
+}
+
+ul.footer-list li:last-child {
+    border-right: none !important;
+}
+
+.footer a {
+    text-decoration: none !important;
+    color: #3699ff !important;
+}

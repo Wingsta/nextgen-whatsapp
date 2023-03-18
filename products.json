@@ -1,0 +1,876 @@
+[
+  {
+    "_id": "630ab4150220ab36ddd87ed6",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "DJTF3P18CYW557820",
+    "name": "Model 3",
+    "price": 998,
+    "status": 1,
+    "quantity": 73246,
+    "addedDate": "2075-12-22T23:57:32.838Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.278Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed7",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "90VAB149PUPY29952",
+    "name": "2",
+    "price": 990,
+    "status": 2,
+    "quantity": 44252,
+    "addedDate": "2045-04-30T18:25:53.675Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eba",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "FF2VN0JNUYE633050",
+    "name": "Expedition",
+    "price": 988,
+    "status": 2,
+    "quantity": 67622,
+    "addedDate": "1992-02-05T22:59:41.630Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.693Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f0a",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "HYCWUJ9534S169023",
+    "name": "Camaro",
+    "price": 984,
+    "status": 2,
+    "quantity": 63313,
+    "addedDate": "2000-03-02T05:57:10.228Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87edb",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "UBX2AB3GF1JP85729",
+    "name": "Mercielago",
+    "price": 966,
+    "status": 1,
+    "quantity": 44383,
+    "addedDate": "2024-07-03T21:07:01.326Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.698Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec7",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "W82ZFK79JWS784128",
+    "name": "Model 3",
+    "price": 946,
+    "status": 1,
+    "quantity": 78188,
+    "addedDate": "2092-11-07T19:45:33.484Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.694Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed8",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "HPWHWA4FRVEW26522",
+    "name": "Model T",
+    "price": 932,
+    "status": 2,
+    "quantity": 12281,
+    "addedDate": "1995-04-03T19:22:57.321Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ef4",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "KHTFVJD1XSE233390",
+    "name": "Wrangler",
+    "price": 896,
+    "status": 1,
+    "quantity": 74035,
+    "addedDate": "2046-05-30T16:36:30.732Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.703Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee4",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "UJR8BFHBLLCV54876",
+    "name": "PT Cruiser",
+    "price": 838,
+    "status": 2,
+    "quantity": 70473,
+    "addedDate": "2095-04-25T19:26:08.667Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.699Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed1",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "M84EEB19WJCC38421",
+    "name": "911",
+    "price": 820,
+    "status": 2,
+    "quantity": 59593,
+    "addedDate": "2012-04-12T05:03:45.828Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec9",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "CD6GC3993GS251260",
+    "name": "Land Cruiser",
+    "price": 816,
+    "status": 2,
+    "quantity": 5432,
+    "addedDate": "2096-08-20T11:11:04.880Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.695Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee0",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "VRSKER2VGHHL40105",
+    "name": "Silverado",
+    "price": 806,
+    "status": 2,
+    "quantity": 46205,
+    "addedDate": "2012-09-17T20:43:25.157Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.698Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec1",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "KW4PBUETWBUL92299",
+    "name": "Model T",
+    "price": 794,
+    "status": 1,
+    "quantity": 15622,
+    "addedDate": "2005-11-24T12:39:05.076Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.694Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed2",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "7GZ0HYKCZUAA40877",
+    "name": "Taurus",
+    "price": 782,
+    "status": 1,
+    "quantity": 46712,
+    "addedDate": "1994-09-20T13:09:00.429Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f05",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "H0F9HF07KERC54781",
+    "name": "Roadster",
+    "price": 778,
+    "status": 1,
+    "quantity": 11087,
+    "addedDate": "2098-02-07T21:56:48.980Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ef8",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "UYPA7VNE8TGL72994",
+    "name": "Explorer",
+    "price": 754,
+    "status": 1,
+    "quantity": 59310,
+    "addedDate": "1992-12-08T20:32:13.634Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.704Z",
+    "updatedAt": "2022-08-28T00:52:36.279Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f03",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "T4TC27FT00UV85549",
+    "name": "1",
+    "price": 738,
+    "status": 2,
+    "quantity": 79195,
+    "addedDate": "2048-08-07T21:37:15.234Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.706Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f0b",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "0HT2VS5ESBDJ84536",
+    "name": "Camaro",
+    "price": 702,
+    "status": 1,
+    "quantity": 85768,
+    "addedDate": "2045-08-31T08:37:51.643Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f15",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "47P1F0LN1UA486917",
+    "name": "Impala",
+    "price": 698,
+    "status": 1,
+    "quantity": 54503,
+    "addedDate": "2090-05-14T18:58:25.922Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.710Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee5",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "9C9N4P48W7KK40479",
+    "name": "CTS",
+    "price": 684,
+    "status": 1,
+    "quantity": 57256,
+    "addedDate": "2031-05-12T08:58:00.550Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.699Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f04",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "3VKVL4GV89YE34569",
+    "name": "Charger",
+    "price": 614,
+    "status": 2,
+    "quantity": 3615,
+    "addedDate": "2037-11-12T09:24:12.443Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eb5",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "7ZHG9GATE7W989174",
+    "name": "Countach",
+    "price": 592,
+    "status": 2,
+    "quantity": 98629,
+    "addedDate": "2035-11-23T12:04:49.116Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.692Z",
+    "updatedAt": "2022-08-28T00:52:36.280Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ede",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "A6MM1V102LMG77678",
+    "name": "Model S",
+    "price": 518,
+    "status": 2,
+    "quantity": 67977,
+    "addedDate": "2093-01-28T10:38:17.086Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.698Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eb7",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "0C0FAJZ4YZNV12594",
+    "name": "Volt",
+    "price": 506,
+    "status": 1,
+    "quantity": 52422,
+    "addedDate": "2017-08-18T05:41:33.698Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.693Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f07",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "XDFLBSU140GB49578",
+    "name": "Explorer",
+    "price": 474,
+    "status": 1,
+    "quantity": 9850,
+    "addedDate": "2015-05-22T23:17:25.976Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eed",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "VK1E3D73B9VH23884",
+    "name": "2",
+    "price": 452,
+    "status": 1,
+    "quantity": 33804,
+    "addedDate": "2061-01-30T17:50:06.730Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.701Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec6",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "GWSLVBV1DZZJ12751",
+    "name": "1",
+    "price": 448,
+    "status": 2,
+    "quantity": 77874,
+    "addedDate": "2042-07-06T11:50:42.855Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.694Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87efa",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "YMJ1Y4K687HT20246",
+    "name": "Model T",
+    "price": 448,
+    "status": 2,
+    "quantity": 17956,
+    "addedDate": "2023-02-13T21:45:03.171Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.705Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87edf",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "95UYD3D20RAU14578",
+    "name": "Fortwo",
+    "price": 440,
+    "status": 2,
+    "quantity": 42596,
+    "addedDate": "2040-12-18T09:19:53.850Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.698Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee9",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "K1B5NYPPJCTN93396",
+    "name": "Civic",
+    "price": 420,
+    "status": 2,
+    "quantity": 23671,
+    "addedDate": "2006-04-26T15:10:35.035Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.699Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ef1",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "5Z6U9UXKE3HH34166",
+    "name": "Aventador",
+    "price": 386,
+    "status": 1,
+    "quantity": 18825,
+    "addedDate": "2037-12-18T11:49:00.670Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.701Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec8",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "8BJK8GPPY2NS70615",
+    "name": "Sentra",
+    "price": 350,
+    "status": 2,
+    "quantity": 18157,
+    "addedDate": "2016-08-16T20:05:55.897Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.695Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec4",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "GTH5MR3YZXKX43429",
+    "name": "Countach",
+    "price": 348,
+    "status": 2,
+    "quantity": 51525,
+    "addedDate": "2008-08-26T18:47:49.622Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.694Z",
+    "updatedAt": "2022-08-28T00:52:36.281Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed9",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "FWS5CB7063CX64394",
+    "name": "Grand Cherokee",
+    "price": 338,
+    "status": 1,
+    "quantity": 20825,
+    "addedDate": "1998-10-26T10:37:31.298Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.698Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed5",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "5LH133XFBJGM31310",
+    "name": "1",
+    "price": 286,
+    "status": 2,
+    "quantity": 65735,
+    "addedDate": "1990-05-28T11:37:48.966Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87efc",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "3E0T99PSGXAG70241",
+    "name": "Civic",
+    "price": 264,
+    "status": 1,
+    "quantity": 2642,
+    "addedDate": "2038-09-11T18:58:35.179Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.706Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee2",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "7NZNCPXVUMY969527",
+    "name": "F-150",
+    "price": 242,
+    "status": 2,
+    "quantity": 83815,
+    "addedDate": "2065-12-25T07:20:55.222Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.699Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87f06",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "15D35P9D8DVY88373",
+    "name": "Fortwo",
+    "price": 222,
+    "status": 1,
+    "quantity": 91227,
+    "addedDate": "1991-12-10T01:04:06.704Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.707Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ed4",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "ZUK129KB24DP62249",
+    "name": "LeBaron",
+    "price": 198,
+    "status": 2,
+    "quantity": 15249,
+    "addedDate": "2068-07-27T00:07:34.784Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.697Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ec5",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "7VN71CCKYPFJ85208",
+    "name": "Beetle",
+    "price": 194,
+    "status": 2,
+    "quantity": 7848,
+    "addedDate": "1999-07-20T09:00:53.370Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.694Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ecb",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "8H5J572P4GGE50661",
+    "name": "CTS",
+    "price": 166,
+    "status": 1,
+    "quantity": 61483,
+    "addedDate": "2026-02-23T12:22:24.340Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.695Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ee6",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "44GFNPTBCTKT43172",
+    "name": "Expedition",
+    "price": 164,
+    "status": 1,
+    "quantity": 11460,
+    "addedDate": "2029-04-28T03:41:51.351Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.699Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eb4",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "CXH3Y09BTMET25845",
+    "name": "Altima",
+    "price": 154,
+    "status": 1,
+    "quantity": 14332,
+    "addedDate": "2089-03-17T00:49:47.142Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.692Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87ebd",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "JF0GNH2MSMSJ10027",
+    "name": "Sentra",
+    "price": 88,
+    "status": 2,
+    "quantity": 17022,
+    "addedDate": "2013-12-31T17:29:42.847Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.693Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87eb9",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "2ZT9BW7EYREZ61310",
+    "name": "Beetle",
+    "price": 60,
+    "status": 1,
+    "quantity": 96021,
+    "addedDate": "2063-08-02T11:43:58.106Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.693Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  },
+  {
+    "_id": "630ab4150220ab36ddd87efd",
+    "carouselImages": [
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion",
+      "https://loremflickr.com/640/480/fashion"
+    ],
+    "sku": "YMD02RDFRPV995609",
+    "name": "Sentra",
+    "price": 0,
+    "status": 2,
+    "quantity": 20908,
+    "addedDate": "2099-01-29T00:11:15.521Z",
+    "thumbnail": "https://loremflickr.com/640/480/fashion",
+    "companyId": "630a9b2f0eaf121a8bb5ffaa",
+    "__v": 0,
+    "createdAt": "2022-08-28T00:17:25.706Z",
+    "updatedAt": "2022-08-28T00:52:36.282Z"
+  }
+]

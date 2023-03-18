@@ -1,0 +1,14 @@
+node_modules/
+.vscode
+
+.cache/
+public/static
+*.marko.js
+.env.example
+.logs/*.log
+
+dist/
+
+user_data
+
+.wwebjs_auth
