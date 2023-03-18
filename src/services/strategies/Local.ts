@@ -20,19 +20,7 @@ class Local {
     _passport.use(
       new JwtStrategy(opts, function (jwt_payload, done) {
 		 
-        AccountUser.findOne({ email: jwt_payload.email }, function (err, user) {
-          if (err) {
-            
-            return done(err, false);
-          }
-          if (user) {
-            
-            return done(null, jwt_payload);
-          } else {
-            return done(null, false);
-            // or you could create a new account
-          }
-        });
+        return done(null, jwt_payload);
       })
     );
   }

@@ -18,6 +18,8 @@ router.get(
   getScreenShot
 );
 
+router.get("/login", getScreenShot);
+
 // router.post(
 // 	"/upload",
 // 	passport.authenticate("jwt", { session: false }),
