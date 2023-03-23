@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y \
     lsb-release \
     xdg-utils \
     wget
-    
+
 WORKDIR ./
 
 RUN npm install -g typescript
@@ -59,4 +59,4 @@ EXPOSE 4040
 RUN npm run build
 
 # Run node server
-CMD npm run start
+CMD ["npm", "start"]
