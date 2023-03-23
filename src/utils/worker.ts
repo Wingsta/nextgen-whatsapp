@@ -168,11 +168,13 @@ async function mainModule() {
                 let k = await client.getNumberId(remainingContacts[i].contact);
                                 if (k._serialized){
                                   if (attachment){
-await client.sendMessage(k._serialized, "hello sir", {media : attachment});
+await client.sendMessage(k._serialized, messagedataObject?.message as string, {
+  media: attachment,
+});
                                   }
                                     else await client.sendMessage(
                                       k._serialized,
-                                      "hello sir"
+                                      messagedataObject?.message as string
                                     );
                 //  console.log(s);
                                 }
