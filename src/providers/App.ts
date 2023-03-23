@@ -14,7 +14,8 @@ import { Database } from './Database';
 import Queue from './Queue';
 import Locals from './Locals';
 import Log from '../middlewares/Log';
-
+import Worker from "../utils/worker";
+//    import { Worker } from "worker_threads";
 class App {
 	// Clear the console
 	public clearConsole (): void {
@@ -49,8 +50,9 @@ class App {
 	// Loads the Worker Cluster
 	public loadWorker (): void {
 		Log.info('Worker :: Booting @ Master...');
-	}
+		const worker1 = Worker();
 
+	}
 	// Loads the Queue Monitor
 	public loadQueue (): void {
 		// const isQueueMonitorEnabled: boolean = Locals.config().queueMonitor;

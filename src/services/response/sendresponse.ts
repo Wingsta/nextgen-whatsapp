@@ -5,7 +5,7 @@ export const sendResponse = (data : any, message: string = 'success', error: boo
         data ,
         message,
         error,
-        status : !!error
+        success : !!error
     }
 }
 
@@ -14,7 +14,7 @@ export const sendSuccessResponse = (data: any, message: string = "success") => {
     data,
     message,
     error: false,
-    status: true,
+    success: true,
   };
 };
 
@@ -23,6 +23,6 @@ export const sendErrorResponse = ( message: string = "success", error = null,dat
     data: data || null ,
     message,
     error,
-    status: false,
+    success: false,
   };
 };

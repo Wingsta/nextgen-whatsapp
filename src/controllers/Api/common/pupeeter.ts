@@ -9,7 +9,12 @@ export const getScreenShot = async (
 ) => {
   try {
 
-    const client = new Client({ authStrategy: new LocalAuth() });
+    const client = new Client({
+      authStrategy: new LocalAuth({ clientId: "next-gen" }),
+      puppeteer: {
+        args: ["--no-sandbox"],
+      },
+    });
     client.on("qr", (qr) => {
       // Generate and scan this code with your phone
       console.log("QR RECEIVED", qr);

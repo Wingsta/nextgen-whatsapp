@@ -18,63 +18,22 @@ export interface IAccountUser {
   
 }
 
-export interface ICompany {
-  _id: Types.ObjectId;
-  companyName: string;
-  meta: { [key: string]: any };
-  razorpayAppId?: string;
-  razorpaySecretKey?: string;
-  promoCode: string;
-  sms: {
-    value: number;
-    totalUsed: number;
-    totalCredits: number;
-  };
-  whatsapp: {
-    value: number;
-    totalUsed: number;
-    totalCredits: number;
-  };
+export interface IUser {
+  name: String;
+  qrcode: String;
 }
 
-export type TransactionStatusT =
-  | "CREATED"
-  | "COMPLETED"
-  | "FAILED"
-  | "CANCELLED"
-  | "PROCESSING" | string;
-
-export type TransactionStatusConstantT = "IN"| "OUT" | "REFUND" | string;
-
-export type TransactionGatewayT = "RAZORPAY" | string;
-
-export interface ITranscationLogs {
-  _id: Types.ObjectId;
-  companyId: Types.ObjectId;
-  userId: Types.ObjectId;
-  status: TransactionStatusT;
-  razorpayPaymentId: string;
-  returnData: any;
-  item: {
-    type: "SMS" | "WHATSAPP";
-    value: number;
-    credits: number;
-  }[];
-  totalAmount: number;
-  transactionStatus: TransactionStatusConstantT;
-  gateway: TransactionGatewayT;
-  mode: string;
-  orderId: string;
+export interface IMessages {
+  message: String;
+  media: Object;
+  meta: Object;
+  processed: Boolean;
+  lock: Boolean;
 }
 
-export interface IMessageLogs {
-  type: "SMS" | "WHATSAPP";
-  message: string;
-  phoneNumber: string;
-  creditsUsed: string;
-  actualSpent: string;
-  companyId: Types.ObjectId;
-  userId: Types.ObjectId;
+export interface IMessagesLogs {
+  contact: String;
+  status: Object;
+  meta: Object;
+  messageId: Types.ObjectId;
 }
-
-

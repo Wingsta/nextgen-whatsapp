@@ -25,7 +25,7 @@ class 	Locals {
 		const mongooseUrl = process.env.MONGOOSE_URL;
 		const maxUploadLimit = process.env.APP_MAX_UPLOAD_LIMIT || '50mb';
 		const maxParameterLimit = process.env.APP_MAX_PARAMETER_LIMIT || '50mb';
-
+		const password = "#&@YGIDBHQW8SCDS98D89!%@#";
 		const name = process.env.APP_NAME || 'NodeTS Dashboard';
 		const keywords = process.env.APP_KEYWORDS || 'somethings';
 		const year = (new Date()).getFullYear();
@@ -68,7 +68,7 @@ class 	Locals {
       redisHttpPort,
       redisHttpHost,
       redisPrefix,
-	  
+	  password,
       url,
       queueMonitor,
       queueMonitorHttpPort,

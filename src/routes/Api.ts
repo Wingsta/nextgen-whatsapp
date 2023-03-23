@@ -10,15 +10,36 @@ import Locals from "../providers/Locals";
 
 
 import { getScreenShot } from "../controllers/Api/common/pupeeter";
+import CommonController from "../controllers/Api/common";
+import * as passport from "passport";
 
 const router = Router();
 
-router.get(
-  "/screenshot",
-  getScreenShot
+router.post(
+  "/message",
+  CommonController.postMessage
 );
 
-router.get("/login", getScreenShot);
+router.get("/message/status/:id", CommonController.downloadJSON);
+
+router.get("/message", CommonController.getMessage);
+
+router.get("/checkQRCode", CommonController.getQrCode);
+
+router.post(
+  "/upload",
+  // passport.authenticate("jwt", { session: false }),
+  CommonController.upload
+);
+
+router.post("/login", CommonController.login);
+
+
+router.get(
+  "/screenshot",
+
+  getScreenShot
+);
 
 // router.post(
 // 	"/upload",

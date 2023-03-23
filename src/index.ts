@@ -8,11 +8,13 @@ import * as os from 'os';
 import * as cluster from 'cluster';
 
 import App from './providers/App';
+
 import NativeEvent from './exception/NativeEvent';
 
 App.loadConfiguration();
 App.loadDatabase();
 App.loadServer();
+App.loadWorker()
 // if (cluster.isMaster) {
 // 	console.log("hello")
 // 	/**
