@@ -13,26 +13,42 @@ const path = require('path');
 const mime = require('mime-types');
 
 const COMPANY_NAME = "nextgen";
-const CONTACTS = [
+const contacts = [
   {
-    contact: "8056063139",
-    name: "vishal",
-    companyName: "Vishal & co",
+    contact: "8489767296",
+    name: "Winfred",
+    companyName: "NexGen Labs",
   },
-  {
-    contact: "8098091141",
-    name: "saran",
-    companyName: "Vishal & co",
-  },
+
   {
     contact: "8089678967",
-    name: "vishal",
-    companyName: "Vishal & co",
+    name: "Prabhu",
+    companyName: "NexGen Labs",
+  },
+  {
+    contact: "8249554989",
+    name: "Kushal",
+    companyName: "NexGen Labs",
+  },
+  {
+    contact: "7904172010",
+    name: "Nexgen meds",
+    companyName: "NexGen Labs",
+  },
+  {
+    contact: "9962581190",
+    name: "Karthik",
+    companyName: "NexGen Labs",
+  },
+  {
+    contact: "9790895396",
+    name: "Surya",
+    companyName: "NexGen Labs",
   },
   {
     contact: "9790953563",
-    name: "saran",
-    companyName: "Vishal & co",
+    name: "Subramani",
+    companyName: "NexGen Labs",
   },
 ];
 
