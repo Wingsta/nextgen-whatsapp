@@ -15,6 +15,7 @@ import { IMessages } from "../../../interfaces/models/accountuser";
 import MessagesLogs from "../../../models/messagelog";
 import {contacts} from '../../../utils/contacts'
 import * as fs from "fs";
+import * as Papa from "papaparse";
 import User from "../../../models/user";
 import sharp = require("sharp");
 import { uploadImage } from "../../../services/gcloud/upload";
@@ -52,7 +53,7 @@ class CommonController {
         };
       }
       // return res.json({name : myFile.originalname});
-      
+
       const imageUrl = await uploadImage(myFile, `sociallink_${COMPANY_NAME}`);
       res.json(
         sendSuccessResponse({
@@ -154,15 +155,29 @@ class CommonController {
     }
   }
 
+  public static async getContacts(req: Request, res: Response, next) {
+    try {
+     
+
+      return res.json(sendSuccessResponse({ contacts }));
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  }
+
   public static async postMessage(req: Request, res: Response, next) {
     try {
       let message = req.body as IMessages;
       message.media = {
         urls: message.media || [],
       };
+      message.processed = true;
       if (!message || !message.message) {
         return res.json(sendErrorResponse("invalid message"));
       }
+
+     
 
       message.processed = false;
 
@@ -193,43 +208,36 @@ class CommonController {
         statusData.forEach((item) => {
           obj[item.contact as string] = item.status;
         });
-        let data = contacts.map((it) => ({
+        let data = message?.contacts?.map((it) => ({
+          companyName: it.companyName,
           contact: it.contact,
           status: obj[it.contact],
         }));
 
-        const csvData = json2csv.parse(data, { fields: ["contact", "status"] });
-
-        // res.setHeader("Content-disposition", "attachment; filename=mydata.csv");
-     
-          res.contentType("text/csv");
-         return res.send(Buffer.from(csvData));
+        console.log(data);
+        return res.json(sendSuccessResponse(data));
       } else {
         const filePath = `./public/${id}.csv`;
         fs.readFile(filePath, (err, data) => {
           if (err) {
-            
-            let data = contacts.map((it) => ({
+            let data = contacts?.map((it) => ({
+              companyName: it.companyName,
               contact: it.contact,
               status: false,
             }));
-
-            const csvData = json2csv.parse(data, {
-              fields: ["contact", "status"],
-            });
-             res.contentType("text/csv");
-             return res.send(Buffer.from(csvData));
+            console.log(data);
+            return res.json(sendSuccessResponse(data));
           }
 
+          let json = (Papa.parse(data.toString(),{header : true}))?.data;
           // Set headers for CSV response
-              res.contentType("text/csv");
-            return res.send(Buffer.from(data));
+          // const json = JSON.stringify(jsonArr.data);
+          console.log(json);
+          return res.json(sendSuccessResponse(json));
           // res.status(200).send(data);
         });
       }
-    } catch (error) {
-
-    }
+    } catch (error) {}
   }
 }
 

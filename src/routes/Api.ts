@@ -24,6 +24,8 @@ router.get("/message/status/:id", CommonController.downloadJSON);
 
 router.get("/message", CommonController.getMessage);
 
+router.get("/contact", CommonController.getContacts);
+
 router.get("/checkQRCode", CommonController.getQrCode);
 
 router.post(

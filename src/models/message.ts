@@ -21,6 +21,7 @@ export const MessagesSchema = new mongoose.Schema<IMessages>(
     meta: { type: Object },
     processed: { type: Boolean, default: false },
     lock: { type: Boolean, default: false },
+    contacts : {type : Array, default : []}
   },
   {
     timestamps: true,

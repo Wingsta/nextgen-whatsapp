@@ -29,6 +29,12 @@ export interface IMessages {
   meta: Object;
   processed: Boolean;
   lock: Boolean;
+  contacts: {
+    companyName: string;
+    contact: string;
+    key: number;
+    name: string;
+  }[];
 }
 
 export interface IMessagesLogs {

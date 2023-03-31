@@ -13,7 +13,7 @@ const path = require('path');
 const mime = require('mime-types');
 
 const COMPANY_NAME = "nextgen";
-const CONTACTS = contacts;
+
 
 const client = new Client({
     authStrategy: new LocalAuth({ clientId: "next-gen" }),
@@ -113,6 +113,7 @@ async function mainModule() {
             if (messagesData && messagesData?.length === 1) {
                 let messageId = messagesData?.[0]._id;
                 let messagedataObject = messagesData?.[0];
+                const CONTACTS = messagesData?.[0]?.contacts || [];
               let getcontacts = await MessageLogs.find({
                 messageId: messageId,
               }).lean();
@@ -172,10 +173,17 @@ await client.sendMessage(k._serialized, messagedataObject?.message as string, {
                    messageId: messageId,
                  }).lean();
 
-                 let data = contacts.map(it => ({contact : it.contact , status : !!(getFinalContacts.find(kt => kt.contact === it.contact)?.status)}))
+                 let data = CONTACTS.map((it) => ({
+                   contact: it.contact,
+                   companyName: it.companyName,
+                   name: it.name,
+                   status: !!getFinalContacts.find(
+                     (kt) => kt.contact === it.contact
+                   )?.status,
+                 }));
 
                  const csvData = json2csv.parse(data, {
-                   fields: ["contact", "status"],
+                   fields: ["contact", "status", "companyName","name"],
                  });
 
                   const filePath = `./public/${messageId}.csv`;
