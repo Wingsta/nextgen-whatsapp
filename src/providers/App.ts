@@ -50,7 +50,7 @@ class App {
 	// Loads the Worker Cluster
 	public loadWorker (): void {
 		Log.info('Worker :: Booting @ Master...');
-		const worker1 = Worker();
+		// const worker1 = Worker();
 
 	}
 	// Loads the Queue Monitor
