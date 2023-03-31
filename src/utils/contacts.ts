@@ -1,5 +1,10 @@
 export const contacts = [
   {
+    contact: "8056063139",
+    name: "Vishal",
+    companyName: "Sociallink",
+  },
+  {
     contact: "8489767296",
     name: "Winfred",
     companyName: "NexGen Labs",

@@ -34,6 +34,7 @@ export interface IMessages {
     contact: string;
     key: number;
     name: string;
+    status: boolean;
   }[];
 }
 

@@ -172,14 +172,10 @@ class CommonController {
       message.media = {
         urls: message.media || [],
       };
-      message.processed = true;
+      
       if (!message || !message.message) {
         return res.json(sendErrorResponse("invalid message"));
       }
-
-     
-
-      message.processed = false;
 
       let messageSaved = await new Messages({
         ...message,
@@ -202,41 +198,12 @@ class CommonController {
 
       let message = await Messages.findById(id).lean();
 
-      if (message.lock) {
-        let statusData = await MessagesLogs.find({ messageId: id }).lean();
-        const obj = {};
-        statusData.forEach((item) => {
-          obj[item.contact as string] = item.status;
-        });
-        let data = message?.contacts?.map((it) => ({
-          companyName: it.companyName,
-          contact: it.contact,
-          status: obj[it.contact],
-        }));
-
-        console.log(data);
-        return res.json(sendSuccessResponse(data));
-      } else {
-        const filePath = `./public/${id}.csv`;
-        fs.readFile(filePath, (err, data) => {
-          if (err) {
-            let data = contacts?.map((it) => ({
-              companyName: it.companyName,
-              contact: it.contact,
-              status: false,
-            }));
-            console.log(data);
-            return res.json(sendSuccessResponse(data));
-          }
-
-          let json = (Papa.parse(data.toString(),{header : true}))?.data;
-          // Set headers for CSV response
-          // const json = JSON.stringify(jsonArr.data);
-          console.log(json);
-          return res.json(sendSuccessResponse(json));
-          // res.status(200).send(data);
-        });
-      }
+      return res.json(
+        sendSuccessResponse(
+          message?.contacts?.map((it) => ({ ...it, status: !!it.status })) || []
+        )
+      );
+      
     } catch (error) {}
   }
 }
