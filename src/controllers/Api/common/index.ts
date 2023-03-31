@@ -198,6 +198,13 @@ class CommonController {
 
       let message = await Messages.findById(id).lean();
 
+      if(!message.contacts){
+         return res.json(
+           sendErrorResponse("No contacts where selected"
+           )
+         );
+      }
+
       return res.json(
         sendSuccessResponse(
           message?.contacts?.map((it) => ({ ...it, status: !!it.status })) || []
