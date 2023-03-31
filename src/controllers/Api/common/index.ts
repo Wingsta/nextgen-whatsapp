@@ -198,7 +198,7 @@ class CommonController {
 
       let message = await Messages.findById(id).lean();
 
-      if(!message.contacts){
+      if(!message.contacts?.length){
          return res.json(
            sendErrorResponse("No contacts where selected"
            )
