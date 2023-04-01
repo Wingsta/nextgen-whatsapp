@@ -8,18 +8,35 @@ import MessageLogs from "../models/messagelog";
 import * as fs from "fs";
 import axios from "axios";
 import User from "../models/user";
-import { Client, LocalAuth, MessageMedia } from "whatsapp-web.js";
+import { Client, LocalAuth, MessageMedia, RemoteAuth } from "whatsapp-web.js";
 const path = require("path");
 const mime = require("mime-types");
+const { MongoStore } = require("wwebjs-mongo");
 
+  const dsn = process.env.MONGOOSE_URL;
+  const options = { useNewUrlParser: true, useUnifiedTopology: true };
+  mongoose.connect(dsn, options, async (error) => {
+    if(error){
+      return;
+    }
+    let isQrUsed = false;
 const COMPANY_NAME = "nextgen";
 
+ const store = new MongoStore({ mongoose: mongoose ,});
+
 const client = new Client({
-  authStrategy: new LocalAuth({ clientId: "next-gen" }),
+     authStrategy: new RemoteAuth({
+            store: store,
+            clientId : "nextgen",
+            backupSyncIntervalMs: 300000,
+        }),
   puppeteer: {
-    args: ["--no-sandbox"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   },
 });
+
+console.log(client)
+client.initialize();
 
 async function getFileObjectFromS3Url(s3Url) {
   try {
@@ -129,8 +146,11 @@ async function mainModule() {
           let attachment = null;
 
           if (fileObject) {
-            attachment = await MessageMedia.fromUrl(
-              (messagedataObject?.media as any)?.urls?.[0]
+            attachment = new MessageMedia(
+              fileObject.mimetype,
+              fileObject.buffer,
+              fileObject.filename,
+              fileObject.size
             );
             console.log(fileObject.filename, fileObject.mimetype);
           }
@@ -140,12 +160,12 @@ async function mainModule() {
             if (attachment) {
               await client.sendMessage(
                 k._serialized,
-               "" ,
+                messagedataObject?.message as string,
                 {
                   media: attachment,
                 }
               );
-            }  
+            } else
               await client.sendMessage(
                 k._serialized,
                 messagedataObject?.message as string
@@ -162,17 +182,15 @@ async function mainModule() {
             return it
           });
 
-           await Messages.findOneAndUpdate(
-             { _id: messageId },
-             { $set: { contacts: CONTACTS } },
-             { upsert: true }
-           );
-
           await asyncTimeout(timeOut);
         }
 
         await processStatus(messageId, true);
-      
+       await Messages.findOneAndUpdate(
+         { _id: messageId },
+         { $set: { contacts: CONTACTS } },
+         { upsert: true }
+       );
 
         await unlockMessage(messageId);
 
@@ -219,7 +237,6 @@ async function mainModule() {
 
     // parentPort.postMessage('Hello from the worker thread!');
   } catch (error) {
-    process.exit(1)
     console.log(error);
   }
 }
@@ -249,6 +266,7 @@ function asyncTimeout(delay) {
 client.on("qr", (qr) => {
   // Generate and scan this code with your phone
   console.log(qr);
+  isQrUsed = true
   if (User) updateQrCode(qr, COMPANY_NAME);
 });
 
@@ -262,24 +280,35 @@ client.on("auth_failure", (msg) => {
 });
 
 client.on("ready", async () => {
-  console.log("READY");
 
-  if (User) {
-    await updateQrCode("", COMPANY_NAME);
-    mainModule();
-  }
-
+ console.log("ready");
   // let k = await client.getNumberId("8056063139");
   // client.sendMessage(k._serialized, "hello")
   // console.log(k);
+   if (User && !isQrUsed) {
+     await updateQrCode("", COMPANY_NAME);
+     mainModule();
+   }
 });
+
+client.on('remote_session_saved', async() => {
+    // Do Stuff...
+      console.log("Session found");
+
+      if (User && isQrUsed) {
+        await updateQrCode("", COMPANY_NAME);
+        mainModule();
+      }
+})
+ 
 console.log("stating client");
 
+  });
 const start = () => {
-  client.initialize();
+  
 };
 
-init();
+// init();
 // client.resetState()
 export default start;
 
