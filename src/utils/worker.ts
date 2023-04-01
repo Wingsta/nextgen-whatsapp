@@ -17,7 +17,7 @@ const COMPANY_NAME = "nextgen";
 const client = new Client({
   authStrategy: new LocalAuth({ clientId: "next-gen" }),
   puppeteer: {
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: ["--no-sandbox"],
   },
 });
 
@@ -129,11 +129,8 @@ async function mainModule() {
           let attachment = null;
 
           if (fileObject) {
-            attachment = new MessageMedia(
-              fileObject.mimetype,
-              fileObject.buffer,
-              fileObject.filename,
-              fileObject.size
+            attachment = await MessageMedia.fromUrl(
+              (messagedataObject?.media as any)?.urls?.[0]
             );
             console.log(fileObject.filename, fileObject.mimetype);
           }
@@ -143,12 +140,12 @@ async function mainModule() {
             if (attachment) {
               await client.sendMessage(
                 k._serialized,
-                messagedataObject?.message as string,
+               "" ,
                 {
                   media: attachment,
                 }
               );
-            } else
+            }  
               await client.sendMessage(
                 k._serialized,
                 messagedataObject?.message as string
@@ -165,15 +162,17 @@ async function mainModule() {
             return it
           });
 
+           await Messages.findOneAndUpdate(
+             { _id: messageId },
+             { $set: { contacts: CONTACTS } },
+             { upsert: true }
+           );
+
           await asyncTimeout(timeOut);
         }
 
         await processStatus(messageId, true);
-       await Messages.findOneAndUpdate(
-         { _id: messageId },
-         { $set: { contacts: CONTACTS } },
-         { upsert: true }
-       );
+      
 
         await unlockMessage(messageId);
 
@@ -220,6 +219,7 @@ async function mainModule() {
 
     // parentPort.postMessage('Hello from the worker thread!');
   } catch (error) {
+    process.exit(1)
     console.log(error);
   }
 }
