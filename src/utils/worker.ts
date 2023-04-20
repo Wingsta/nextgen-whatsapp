@@ -181,6 +181,11 @@ async function mainModule() {
 
             return it
           });
+           await Messages.findOneAndUpdate(
+             { _id: messageId },
+             { $set: { contacts: CONTACTS } },
+             { upsert: true }
+           );
 
           await asyncTimeout(timeOut);
         }
