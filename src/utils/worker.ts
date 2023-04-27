@@ -158,7 +158,21 @@ async function mainModule() {
           let k = await client.getNumberId(contactRe);
           if (k._serialized) {
             if (attachment) {
-              await client.sendMessage(
+             
+              if(fileObject.mimetype === 'application/pdf'){
+                 await client.sendMessage(
+                k._serialized,
+               "" as string,
+                {
+                  media: attachment,
+                }
+              );
+                await client.sendMessage(
+                k._serialized,
+                messagedataObject?.message as string
+              );
+              }
+              else  await client.sendMessage(
                 k._serialized,
                 messagedataObject?.message as string,
                 {
