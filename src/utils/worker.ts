@@ -155,7 +155,13 @@ async function mainModule() {
             console.log(fileObject.filename, fileObject.mimetype);
           }
 
-          let k = await client.getNumberId(contactRe);
+          let k  = null
+          try {
+k = await client.getNumberId(contactRe);
+          }
+          catch(ee){
+            console.log(ee)
+          }
           if (k?._serialized) {
             if (attachment) {
              
