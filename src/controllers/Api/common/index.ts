@@ -157,8 +157,6 @@ class CommonController {
 
   public static async getContacts(req: Request, res: Response, next) {
     try {
-     
-
       return res.json(sendSuccessResponse({ contacts }));
     } catch (error) {
       console.log(error);
@@ -172,7 +170,7 @@ class CommonController {
       message.media = {
         urls: message.media || [],
       };
-      
+
       if (!message || !message.message) {
         return res.json(sendErrorResponse("invalid message"));
       }
@@ -198,11 +196,22 @@ class CommonController {
 
       let message = await Messages.findById(id).lean();
 
-      if(!message.contacts?.length){
-         return res.json(
-           sendErrorResponse("No contacts where selected"
-           )
-         );
+      if (!message.contacts?.length) {
+        return res.json(sendErrorResponse("No contacts where selected"));
+      }
+
+      if(req.query.download){
+          const csvData = json2csv.parse(
+            message?.contacts?.map((it) => ({ ...it, status: !!it.status })),
+            {
+              fields: ["contact","companyName","name","place", "status"],
+            }
+          );
+
+          // res.setHeader("Content-disposition", "attachment; filename=mydata.csv");
+
+          res.contentType("text/csv");
+          return res.send(Buffer.from(csvData));
       }
 
       return res.json(
@@ -210,9 +219,10 @@ class CommonController {
           message?.contacts?.map((it) => ({ ...it, status: !!it.status })) || []
         )
       );
-      
     } catch (error) {}
   }
+
+  
 }
 
 
